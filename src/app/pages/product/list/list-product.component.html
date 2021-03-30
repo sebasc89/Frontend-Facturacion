@@ -1,0 +1,23 @@
+<h2 class="content-block">Lista de Productos</h2>
+
+
+<dx-data-grid
+id="gridContainer"
+[dataSource]="results"
+[allowColumnReordering]="true"
+[allowColumnResizing]="true"
+[columnAutoWidth]="true"
+[showBorders]="true"
+[showColumnLines]="false"
+[showRowLines]="true"
+[showBorders]="true"
+[rowAlternationEnabled]="true">
+    <dxi-column dataField="code"></dxi-column>
+    <dxi-column dataField="productName"></dxi-column>
+    <dxi-column dataField="createDate"></dxi-column>
+    <dxi-column dataField="price"></dxi-column>
+    <dxi-column dataField="units"></dxi-column>
+    <dxi-column dataField="discount"></dxi-column>
+    <dxi-column dataField="tax"></dxi-column>
+</dx-data-grid>
+

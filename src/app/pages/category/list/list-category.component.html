@@ -1,0 +1,16 @@
+<h2 class="content-block">Lista de Categorías</h2>
+
+<dx-data-grid
+    id="gridContainer"
+    [dataSource]="results"
+    [allowColumnReordering]="true"
+    [allowColumnResizing]="true"
+    [columnAutoWidth]="true"
+    [showBorders]="true"
+    [showColumnLines]="false"
+    [showRowLines]="true"
+    [showBorders]="true"
+    [rowAlternationEnabled]="true">
+    <dxi-column dataField="categoryName"></dxi-column>
+    <dxi-column dataField="createDate" dataType="date"></dxi-column>
+</dx-data-grid>
